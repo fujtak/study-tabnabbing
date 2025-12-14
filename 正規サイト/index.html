@@ -4,19 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>正規サイト</title>
-  <style>
-    .danger {
-      color: red;
-      border: 1px solid currentColor;
-    }
-  </style>
 </head>
 <body>
   <h1>正規サイト</h1>
   <p>クロスオリジンなサイトへの遷移</p>
   <h2>window.open()</h2>
   <button onclick="window.open('http://127.0.0.1:5501/index.html', '_self')">罠サイトへ遷移（同タブ）</button>
-  <button onclick="window.open('http://127.0.0.1:5501/index.html')" class="danger">罠サイトへ遷移（別タブ）</button>
+  <button onclick="window.open('http://127.0.0.1:5501/index.html')">罠サイトへ遷移（別タブ）</button>
   <h2>a要素</h2>
   <a href="http://127.0.0.1:5501/index.html">罠サイトへ遷移（同タブ）</a>
   <a href="http://127.0.0.1:5501/index.html" target="_blank">罠サイトへ遷移（別タブ）</a>
